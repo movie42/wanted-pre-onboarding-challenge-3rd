@@ -1,8 +1,7 @@
 import React from "react";
-import About from "../Pages/about";
-import Main from "../Pages/main";
 import Route from "./Route";
 import Router from "./Router";
+import { Main, About } from "@/Pages";
 
 interface IAppRoutersProps {}
 
