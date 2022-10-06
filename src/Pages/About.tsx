@@ -1,9 +1,12 @@
-import React from "react";
-
-interface IaboutProps {}
+import Link from "@/Components/Link";
 
 const About = () => {
-  return <div>About</div>;
+  return (
+    <div>
+      <h1>About</h1>
+      <Link to="/">Main</Link>
+    </div>
+  );
 };
 
 export default About;
