@@ -1,11 +1,12 @@
 import { Link } from "@/Components";
+import { Wrapper } from "./Styled";
 
 const MainPage = () => {
   return (
-    <div>
+    <Wrapper>
       <h1>MainPage</h1>
       <Link to="/about">About</Link>
-    </div>
+    </Wrapper>
   );
 };
 
