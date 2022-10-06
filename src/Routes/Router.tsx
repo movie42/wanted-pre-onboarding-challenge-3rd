@@ -1,11 +1,20 @@
-import React from "react";
+import React, { createContext, useState } from "react";
+
+interface LocationContextProps {
+  location: {
+    pathName: string;
+  };
+}
+
+const LocationContext = createContext<LocationContextProps>(null!);
 
 interface IRoutesProps {
-  children: React.ReactElement;
+  children: React.ReactNode;
 }
 
 const Router = ({ children }: IRoutesProps) => {
-  return children;
+  const [location, setLocation] = useState({ pathName: "/" });
+  return <LocationContext.Provider children={children} value={{ location }} />;
 };
 
 export default Router;
