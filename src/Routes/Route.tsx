@@ -3,7 +3,7 @@ import { LocationContext } from "./Router";
 
 interface IRouteProps {
   path: string;
-  component: React.ReactNode;
+  component: JSX.Element;
   state?: {};
 }
 
